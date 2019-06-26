@@ -1,3 +1,3 @@
 # avantica.bdd.training
 
-#STAGE 2 - BASE Framework
+#STAGE 3 - Feature files
