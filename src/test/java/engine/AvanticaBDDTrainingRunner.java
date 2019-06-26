@@ -11,7 +11,7 @@ public class AvanticaBDDTrainingRunner extends tests.Practice2{
 	
 	@Test 
     public void TestRunnerExample() throws Exception {
-        //Add here your test methods
+        demoStage2BDD();
     }
 
 
