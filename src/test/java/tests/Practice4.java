@@ -32,14 +32,15 @@ public class Practice4 extends BasePage{
 		
 	}
 
-	@Then("^I validate the Home page is displayed$")
-	public void i_validate_the_Home_page_is_displayed(){
+	@Then("^I validate the Home page is displayed with the ([^\"]*)$")
+	public void i_validate_the_Home_page_is_displayed_with_the_title(String args1){
 		
-		if (home.getHomeBrowserTitle().contentEquals(homeTitle)) {
+		if (home.getHomeBrowserTitle().contentEquals(args1)) {
 			System.out.println("Home Page is displayed correctly after click Home tab on navigation menu");
 		} else {
 			System.out.println("Home Page title after click Home tab on navigation menu is "+homeTitle);
-			Assert.fail("Home Page is displayed correctly after click Home tab on navigation menu");
+			closeDriver();
+			Assert.fail("Home Page is not displayed correctly after click Home tab on navigation menu");
 		}
 		closeDriver();
 	}

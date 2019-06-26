@@ -1,3 +1,3 @@
 # avantica.bdd.training
 
-#STAGE 4 - Cucumber methods
+#STAGE 5 - Cucumber variables
