@@ -1,3 +1,3 @@
 # avantica.bdd.training
 
-#STAGE 3 - Feature files
+#STAGE 4 - Cucumber methods
