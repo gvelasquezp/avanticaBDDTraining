@@ -1,3 +1,3 @@
 # avantica.bdd.training
 
-#STAGE 5 - Cucumber variables
+#STAGE 6 - Cucumber tags and TestNG

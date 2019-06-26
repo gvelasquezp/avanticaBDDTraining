@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Avantica BDD Training Suite" verbose="1" >
+<test name="Avantica BDD Training Test">
+<classes>
+<class name="engine.BDDEngine"></class>
+</classes>
+</test>
+</suite>

@@ -35,6 +35,7 @@ public class Practice4 extends BasePage{
 	@Then("^I validate the Home page is displayed with the ([^\"]*)$")
 	public void i_validate_the_Home_page_is_displayed_with_the_title(String args1){
 		
+		System.out.println("Testing it with title example : "+args1);
 		if (home.getHomeBrowserTitle().contentEquals(args1)) {
 			System.out.println("Home Page is displayed correctly after click Home tab on navigation menu");
 		} else {
