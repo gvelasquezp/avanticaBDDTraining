@@ -64,9 +64,9 @@ public class BasePage {
         }
         else if (browser == "Chrome"){
 
-            System.setProperty("webdriver.chrome.driver", "$Path/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/guillermo/Documents/drivers/chromedriver");
             driver = new ChromeDriver();
-            driver.get("http://www.google.com");
+            driver.get("http://192.168.0.103:86/");
             driver.manage().window().maximize();
 
         }
@@ -97,10 +97,10 @@ public class BasePage {
         }
         else if (browser == "chrome"){
 
-            System.setProperty("webdriver.chrome.driver", "$Path/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/guillermo/Documents/drivers/chromedriver");
             driver = new ChromeDriver();
-            System.out.println("Go to http://www.google.com");
-            driver.get("http://www.google.com");
+            System.out.println("Go to http://192.168.0.103:86/");
+            driver.get("http://192.168.0.103:86/");
             driver.manage().window().maximize();
 
         }
@@ -171,6 +171,13 @@ public class BasePage {
      **/
     public String getTextValue(By locator) {
         return driver.findElement(locator).getText();
+    }
+    
+    /**
+     * This is a method that obtain the Browser
+     **/
+    public String getTitle() {
+        return driver.getTitle();
     }
     
     
