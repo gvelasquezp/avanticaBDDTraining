@@ -33,6 +33,13 @@ public class TestPractice extends BasePage{
 		standard.setUsernameField(username);
 	    standard.setPasswordField(password);
 	}
+	
+	@When("^I enter the ([^\"]*) and the ([^\"]*)$")
+	public void i_enter_the_username_and_the_password_outline(String username, String password) throws Throwable {
+	    user=username;
+		standard.setUsernameField(username);
+	    standard.setPasswordField(password);
+	}
 
 	@When("^click on login submit button$")
 	public void click_on_login_submit_button() throws Throwable {
